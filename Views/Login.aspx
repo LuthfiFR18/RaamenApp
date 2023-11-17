@@ -1,7 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Site1.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Raamen.Views.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<link href="../Bootstrap/css/bootstrap(1).css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
     <br />
                 <asp:Label ID="LblUsername" runat="server" Text="Username"></asp:Label>
                 <br />
@@ -19,4 +21,5 @@
                 <asp:Label ID="lblRemember" runat="server" Text="Remember Me"></asp:Label>
                 <br />
                 <asp:Button ID="LoginBtn" runat="server" Text="Log In" OnClick="LoginBtn_Click" Width="207px" />
+<script src="../Bootstrap/js/bootstrap.bundle.min.js"></script>
 </asp:Content>

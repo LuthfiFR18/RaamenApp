@@ -24,7 +24,7 @@ namespace Raamen.Views
         {
             GridViewRow row = GridRamen.Rows[e.RowIndex];
             RamenRepository del = new RamenRepository();
-            del.deleteRamen(Convert.ToInt32(row.Cells[0].ToString()));
+            del.deleteRamen(Convert.ToInt32(row.Cells[0].Text));
             Response.Redirect("../Views/Home.aspx");
         }
     }
